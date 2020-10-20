@@ -1,0 +1,20 @@
+{
+  "name": "stock_cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "commander": "^6.1.0",
+    "moment": "^2.29.1",
+    "mongoose": "^5.10.9",
+    "node-fetch": "^2.6.1",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9"
+  }
+}
