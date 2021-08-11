@@ -5,7 +5,11 @@ const moment = require('moment');
 function checkOnTimer() {
   const hours = moment().hours();
   const minute = moment().minute();
-  console.log('当前时间', hours, '时', minute, '分');
+  const weekOfDay = moment().format("E");
+  console.log('当前时间',"星期", weekOfDay, hours, '时', minute, '分');
+  if(weekOfDay === 6 || weekOfDay === 7) {
+	return false;
+  }
   if(
     (hours === 9 && minute >= 30) //9点30正式开盘
     ||
@@ -17,6 +21,7 @@ function checkOnTimer() {
    ) {
      return true;
    }
+
   return false;
 }
 
